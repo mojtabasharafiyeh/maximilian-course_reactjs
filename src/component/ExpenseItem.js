@@ -1,7 +1,7 @@
 import './ExpenseItem.css'
 import './ExpenseDate'
 import ExpenseDate from './ExpenseDate'
-function ExpenceItem(props) {
+function ExpenseItem(props) {
   const month = props.date.toLocaleString('en-US', { month: 'long' })
   const day = props.date.toLocaleString('en-US', { day: '2-digit' })
   const year = props.date.getFullYear()
@@ -15,4 +15,4 @@ function ExpenceItem(props) {
     </div>
   )
 }
-export default ExpenceItem
+export default ExpenseItem
