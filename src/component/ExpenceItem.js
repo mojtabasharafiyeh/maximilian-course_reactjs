@@ -1,11 +1,14 @@
 import './ExpenseItem.css'
 function ExpenceItem() {
+  const expenseDate = new Date(2022, 2, 21)
+  const expenseTitle = 'this is title!'
+  const expenseAmount = '300'
   return (
     <div className='expense-item'>
-      <div>march 28th 2021</div>
+      <div>{expenseDate.toLocaleString()}</div>
       <div className='expense-item__description'>
-        <h2> h2</h2>
-        <div className='expense-item__price'> insurnce</div>
+        <h2> {expenseTitle}</h2>
+        <div className='expense-item__price'>${expenseAmount}</div>
       </div>
     </div>
   )
