@@ -22,9 +22,21 @@ const ExpenseForm = () => {
   }
   const amountChangeHandler = (event) => {
     // setenteredAmount(event.target.value)
+    setuserInput((prevstate) => {
+      return {
+        ...prevstate,
+        enteredAmount: event.target.value,
+      }
+    })
   }
   const dateChangeHandler = (event) => {
     // setenteredDate(event.target.value)
+    setuserInput((prevstate) => {
+      return {
+        ...prevstate,
+        enteredDate: event.target.value,
+      }
+    })
   }
 
   return (
