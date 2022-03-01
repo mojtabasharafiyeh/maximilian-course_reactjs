@@ -22,10 +22,15 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ]
+  const save2Handler = (e) => {
+    const data = { ...e }
+    console.log('in app')
+    console.log(data)
+  }
   return (
     <div>
       <h2>Let's get started!</h2>
-      <NewExpenses />
+      <NewExpenses onsave2={save2Handler} />
       <Expenses items={expenses} />
     </div>
   )
