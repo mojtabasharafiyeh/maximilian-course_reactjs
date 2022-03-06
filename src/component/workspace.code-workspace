@@ -1,10 +1,11 @@
 {
   "folders": [
 	{
-		"path": "..\\..\\public"
+		"path": "..\\.."
 	},
 	{
-		"path": ".."
+		"path": "c:\\Users\\mojtaba\\Downloads\\react-complete-guide-code-05-rendering-lists-conditional-content\\react-complete-guide-code-05-rendering-lists-conditional-content"
 	}
-]
+],
+  "settings": {}
 }
